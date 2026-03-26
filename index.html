@@ -11,66 +11,275 @@
       <meta property="og:title" content="Avsora Software | SAP BTP & AI Solutions">
       <meta property="og:description" content="Experts in SAP S/4HANA, SAP BTP, AI-driven SAP solutions, and enterprise transformation.">
       <meta property="og:type" content="website">
-      <meta property="og:image" content="logo.jpeg">
+      <meta property="og:image" content="logo-removebg-preview.png">
       <!-- Twitter Card -->
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:title" content="Avsora Software | SAP Consulting">
       <meta name="twitter:description" content="SAP S/4HANA, BTP, AI solutions and digital transformation experts.">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
       <style>
-         *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-         html{scroll-behavior:smooth}
-         body{background:#f5f7fb;color:#1e293b}
-         /* Watermark */
-         body::before{content:"";position:fixed;top:50%;left:50%;width:420px;height:420px;background:url('logo.jpeg') no-repeat center;background-size:contain;opacity:.035;transform:translate(-50%,-50%);z-index:-1}
-         .container{max-width:1100px;margin:auto;padding:0 15px}
-         header{background:#0a2540;color:#fff;position:sticky;top:0;z-index:1000}
-         .nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
-         .logo{display:flex;align-items:center;gap:8px}
-         .logo img{height:34px}
-         .nav-links{display:flex}
-         .nav-links a{color:#fff;margin-left:15px;text-decoration:none;font-size:14px}
-         .menu-toggle{display:none;font-size:22px;cursor:pointer}
-         .hero{background:linear-gradient(135deg,#2563eb,#4f46e5);color:white;padding:90px 15px;text-align:center}
-         .hero h1{font-size:30px;margin-bottom:10px}
-         .hero p{font-size:14px;max-width:650px;margin:auto}
-         section{padding:55px 0}
-         h2{text-align:center;margin-bottom:25px;font-size:22px}
-         .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-         .card{background:white;padding:18px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.08);font-size:14px}
-         .card p{margin-top:8px;color:#475569}
-         .cta{background:#1e40af;color:white;text-align:center;padding:55px 15px}
-         .cta p{font-size:14px;max-width:520px;margin:10px auto}
-         .cta a{display:inline-block;margin-top:15px;padding:10px 20px;background:white;color:#1e40af;border-radius:20px;font-size:14px;text-decoration:none}
-         .testimonials{background:#eef2ff}
-         .testimonial-card{background:white;padding:15px;border-radius:10px;font-size:13px;box-shadow:0 3px 10px rgba(0,0,0,0.08)}
-         .testimonial-card p{font-style:italic}
-         .testimonial-card h4{margin-top:8px;font-size:13px}
-         form{max-width:500px;margin:auto}
-         input,textarea,select{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:5px;font-size:13px}
-         button{padding:10px;background:#2563eb;color:#fff;border:none;border-radius:5px;font-size:14px}
-         .contact-box{text-align:center;font-size:14px;margin-bottom:20px}
-         footer{background:#0a2540;color:white;padding:45px 15px}
-         .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:25px;font-size:13px}
-         .footer-grid h3{margin-bottom:10px;font-size:15px}
-         .footer-grid p{margin:5px 0;color:#cbd5f5}
-         .bottom{text-align:center;margin-top:20px;border-top:1px solid #334155;padding-top:10px;font-size:12px}
-         /* Mobile */
-         @media(max-width:768px){
-         .nav-links{display:none;flex-direction:column;position:absolute;top:60px;right:10px;background:#0a2540;width:200px;padding:12px;border-radius:8px;animation:fade .3s}
-         .nav-links a{margin:10px 0}
-         .menu-toggle{display:block;color:white}
-         .hero h1{font-size:22px}
-         }
-         @keyframes fade{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#f5f7fb;color:#1e293b}
+
+/* Watermark */
+body::before{
+content:"";
+position:fixed;
+top:50%;left:50%;
+width:420px;height:420px;
+background:url('logo.jpeg') no-repeat center;
+background-size:contain;
+opacity:.035;
+transform:translate(-50%,-50%);
+z-index:-1
+}
+
+.container{max-width:1100px;margin:auto;padding:0 15px}
+
+/* ✅ FIXED HEADER */
+/* HEADER */
+header{
+background:linear-gradient(90deg,#eef2ff,#dbeafe,#bfdbfe);
+color:#0f172a;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+/* NAV */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.logo{display:flex;align-items:center;gap:8px}
+.logo img{height:34px}
+.nav-links{display:flex}
+.nav-links a{
+color:#0f172a;
+margin-left:15px;
+text-decoration:none;
+font-size:14px;
+transition:.3s;
+}
+.nav-links a:hover{color:#2563eb;}
+
+.menu-toggle{display:none;font-size:22px;cursor:pointer}
+
+/* HERO */
+.hero{
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+color:white;
+padding:90px 15px;
+text-align:center
+}
+.hero h1{font-size:30px;margin-bottom:10px}
+.hero p{font-size:14px;max-width:650px;margin:auto}
+
+/* SECTION */
+section{padding:55px 0}
+
+/* ✅ SECTION HEADINGS (Services, Case, Careers) */
+h2{
+text-align:center;
+margin-bottom:25px;
+font-size:24px;
+font-weight:600;
+color:#1e3a8a;   /* premium blue */
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:18px
+}
+
+/* ✅ CARD TEXT IMPROVEMENT */
+.card{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+font-size:14px;
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(37,99,235,0.15);
+}
+
+/* Title inside cards */
+.card b{
+color:#0f172a;
+font-size:15px;
+}
+
+/* Description text */
+.card p{
+margin-top:8px;
+color:#475569;
+line-height:1.5;
+}
+
+/* CTA */
+.cta{
+    background: linear-gradient(135deg, #1e3a8a, #2563eb); /* Dark blue gradient */
+    color: #ffffff; /* Text in white */
+    text-align: center;
+    padding: 60px 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    margin: 40px 0;
+}
+.cta h2{
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #f0f9ff; /* Slightly lighter than white for a premium look */
+}
+
+.cta p{
+    font-size: 15px;
+    max-width: 520px;
+    margin: 10px auto;
+    color: #dbeafe; /* Soft blue accent text */
+}
+
+.cta a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #f0f9ff; /* White button */
+    color: #1e3a8a; /* Dark blue text */
+    border-radius: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta a:hover{
+    background: #2563eb; /* Dark blue button on hover */
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* TESTIMONIAL */
+.testimonials{background:#eef2ff}
+.testimonial-card{
+background:white;
+padding:15px;
+border-radius:10px;
+font-size:13px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08)
+}
+.testimonial-card p{
+font-style:italic;
+color:#334155;
+}
+.testimonial-card h4{
+margin-top:8px;
+font-size:13px;
+color:#1e3a8a;
+}
+
+/* FORM */
+form{max-width:500px;margin:auto}
+input,textarea,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:13px
+}
+button{
+padding:10px;
+background:#2563eb;
+color:#fff;
+border:none;
+border-radius:5px;
+font-size:14px;
+cursor:pointer;
+transition:.3s;
+}
+button:hover{
+background:#1e40af;
+}
+
+/* CONTACT */
+.contact-box{
+text-align:center;
+font-size:14px;
+margin-bottom:20px;
+color:#1e3a8a;
+}
+
+/* FOOTER */
+/* FOOTER */
+footer {
+    background: linear-gradient(90deg, #eef2ff, #dbeafe, #bfdbfe); /* same as header */
+    color: #0f172a; /* same text color as header */
+    padding: 45px 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* subtle shadow like header */
+}
+
+/* Footer grid layout */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    font-size: 13px;
+}
+
+.footer-grid h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #0f172a; /* match header text color */
+}
+
+.footer-grid p {
+    margin: 5px 0;
+    color: rgba(15, 23, 42, 0.8); /* slightly lighter for readability */
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(15, 23, 42, 0.15);
+    padding-top: 10px;
+    font-size: 12px;
+    color: #0f172a;
+}
+/* MOBILE */
+@media(max-width:768px){
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:10px;
+background:#0a2540;
+width:200px;
+padding:12px;
+border-radius:8px;
+animation:fade .3s
+}
+.nav-links a{margin:10px 0}
+.menu-toggle{display:block;color:white}
+.hero h1{font-size:22px}
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(-10px)}
+to{opacity:1;transform:translateY(0)}
+}
       </style>
    </head>
    <body>
       <header>
+
          <div class="nav container">
             <div class="logo">
-               <img src="logo.jpeg" alt="Avsora Software SAP Consulting Company">
-               <h3 style="font-size:16px">Avsora</h3>
+               <img src="logo-removebg-preview.png" alt="Avsora Software SAP Consulting Company">
+               <h3 style="font-size:16px">Avsora Software</h3>
             </div>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="nav-links">
@@ -238,7 +447,7 @@ Our recruitment team will review your application and reach out to you for the n
             <div class="grid" style="margin-bottom:20px">
                <div class="card">
                   <b>Email</b>
-                  <p>support@avsorasoftware.com</p>
+                  <p>Info@avsorasoftware.com</p>
                </div>
                <div class="card">
                   <b>Phone</b>
@@ -265,7 +474,7 @@ Our recruitment team will review your application and reach out to you for the n
       <footer>
          <div class="footer-grid container">
             <div>
-               <h3>Avsora</h3>
+               <h3>Avsora Software</h3>
                <p>Enterprise SAP consulting delivering scalable and reliable solutions.</p>
             </div>
             <div>
