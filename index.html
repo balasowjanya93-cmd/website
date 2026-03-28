@@ -11,7 +11,7 @@
       <meta property="og:title" content="Avsora Software | SAP BTP & AI Solutions">
       <meta property="og:description" content="Experts in SAP S/4HANA, SAP BTP, AI-driven SAP solutions, and enterprise transformation.">
       <meta property="og:type" content="website">
-      <meta property="og:image" content="logo1.png">
+      <meta property="og:image" content="logo2.png">
       <!-- Twitter Card -->
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:title" content="Avsora Software | SAP Consulting">
@@ -28,7 +28,7 @@ content:"";
 position:fixed;
 top:50%;left:50%;
 width:420px;height:420px;
-background:url('logo1.png') no-repeat center;
+background:url('logo2.png') no-repeat center;
 background-size:contain;
 opacity:.035;
 transform:translate(-50%,-50%);
@@ -256,14 +256,29 @@ flex-direction:column;
 position:absolute;
 top:60px;
 right:10px;
-background:#0a2540;
+
+/* SAME STYLE AS DESKTOP */
+background:linear-gradient(90deg,#eef2ff,#dbeafe,#bfdbfe);
+
 width:200px;
 padding:12px;
 border-radius:8px;
-animation:fade .3s
+animation:fade .3s;
 }
-.nav-links a{margin:10px 0}
-.menu-toggle{display:block;color:white}
+
+/* 👇 IMPORTANT FIX */
+.nav-links a{
+margin:10px 0;
+color:#0f172a;              /* same as desktop */
+font-family:Poppins,sans-serif; /* force consistency */
+font-size:14px;
+}
+
+.menu-toggle{
+display:block;
+color:#0f172a; /* match desktop header */
+}
+
 .hero h1{font-size:22px}
 }
 
@@ -278,7 +293,7 @@ to{opacity:1;transform:translateY(0)}
 
          <div class="nav container">
             <div class="logo">
-               <img src="logo1.png">
+               <img src="logo2.png">
                <h3 style="font-size:16px">Avsora Software</h3>
             </div>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -494,7 +509,14 @@ Our recruitment team will review your application and reach out to you for the n
                <p>About</p>
                <p>Careers</p>
                <p>Contact</p>
+		
             </div>
+<div>
+   <h3>Follow Us</h3>
+   <p><a href="https://www.instagram.com/avsora_software?igsh=MTlscWgzdTR6aTh4bw==" target="_blank">Instagram</a></p>
+<p><a href="https://www.linkedin.com/in/avsora-software-0189073a2" target="_blank">LinkedIn</a></p>
+
+</div>
          </div>
          <div class="bottom">© 2026 Avsora Software</div>
       </footer>
